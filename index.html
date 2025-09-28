@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js"></script> 
+    <title>TODO</title>
+</head>
+<body>
+    
+        <div class="floating-particles" id="particles"></div>
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1>Task Master</h1>
+                <p>Organize your workflow with style and efficiency</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="board-container">
+                <h2 class="board-title">Project Dashboard</h2>
+                <div class="board">
+                    <div class="column" id="active">
+                         <h2>🔥 Active</h2>
+                         <button class="add-task-btn" onclick="addTask('active')">+ Add Active Task</button>
+                    </div>
+                    <div class="column" id="pending">
+                        <h2>Pending</h2>
+                        <div class="task" draggable="true">Finish report</div>
+                        <div class="task" draggable="true">Email client</div>
+                        <div class="task" draggable="true">Plan Meeting</div>
+                        <div class="task" draggable="true">Review mobile app design</div>
+                         <button class="add-task-btn" onclick="addTask('pending')">+ Add Pending Task</button>
+                    </div>
+                     <div class="column" id="completed">
+                      <h2>✅Completed</h2>
+                      <button class="add-task-btn" onclick="addTask('completed')">+ Add Completed Task</button>
+                     </div>
+                </div>
+            </div>
+        </div>   
+        
+        
+        
+        
+    
+    
+</body>
+</html>
