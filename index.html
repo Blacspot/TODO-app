@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <script src="./scripts.js"></script> 
+     <script src="https://kit.fontawesome.com/73b6f5a7c2.js" crossorigin="anonymous"></script>
     <title>TODO</title>
 </head>
 <body>
@@ -19,6 +20,7 @@
         <div class="container">
             <div class="board-container">
                 <h2 class="board-title">Project Dashboard</h2>
+                <h3>Drag and drop tasks between columns at the comfort of your mouse</h3>
                 <div class="board">
                     <div class="column" id="active">
                          <h2>🔥 Active</h2>
@@ -26,10 +28,10 @@
                     </div>
                     <div class="column" id="pending">
                         <h2>Pending</h2>
-                        <div class="task" draggable="true">Finish report</div>
-                        <div class="task" draggable="true">Email client</div>
-                        <div class="task" draggable="true">Plan Meeting</div>
-                        <div class="task" draggable="true">Review mobile app design</div>
+                        <div class="task" draggable="true">Finish report<i class="fa-solid fa-trash"></i></div>
+                        <div class="task" draggable="true">Email client<i class="fa-solid fa-trash"></i></div>
+                        <div class="task" draggable="true">Plan Meeting<i class="fa-solid fa-trash"></i></div>
+                        <div class="task" draggable="true">Review mobile app design<i class="fa-solid fa-trash"></i></div>
                          <button class="add-task-btn" onclick="addTask('pending')">+ Add Pending Task</button>
                     </div>
                      <div class="column" id="completed">

@@ -95,7 +95,7 @@
                 const newTask = document.createElement('div');
                 newTask.className = 'task';
                 newTask.draggable = true;
-                newTask.textContent = taskText.trim();
+                    newTask.innerHTML = `${taskText.trim()}<i class="fa-solid fa-trash"></i>`;
                 
                 column.insertBefore(newTask, addButton);
                 setupDragAndDrop(); // Re-setup drag and drop for new task
